@@ -1,5 +1,29 @@
-header{
-    &__img{
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0;
+}
+
+header {
+    img {
+        width: 162px;
+        height: 44px;
+        padding: 13px 89px;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EAEAEA;
         width: 100%;
+        height: 50px;
+        gap: 17px;
+    }
+
+    input {
+        background-color: #EAEAEA;
+        border: none;
+        font-size: 18px;
     }
 }
