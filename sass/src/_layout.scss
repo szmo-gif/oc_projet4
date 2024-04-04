@@ -1,5 +1,11 @@
+$gris-clair: #F6F6F6;
+
 body {
     font-family: 'Roboto', sans-serif;
     color: black;
     margin: 0;
+}
+
+main{
+    background-color: $gris-clair;
 }
