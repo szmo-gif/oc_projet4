@@ -104,6 +104,7 @@ form input:focus {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  counter-increment: list-counter;
 }
 .fonctionnement ol li:hover {
   background-color: #f5edff;
@@ -112,7 +113,7 @@ form input:focus {
   color: #9356DC;
 }
 .fonctionnement ol li::before {
-  content: "#";
+  content: counter(list-counter);
   display: flex;
   align-items: center;
   justify-content: center;
