@@ -1,8 +1,16 @@
 header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     img{
         width: 162px;
         padding: 13px 89px;
         height: 44px;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     h1{
