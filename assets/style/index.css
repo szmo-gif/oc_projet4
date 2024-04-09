@@ -152,13 +152,13 @@ form input:focus {
 }
 .restaurants h2 {
   width: 100%;
+  padding-left: 20px;
 }
 .restaurants ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 30px;
 }
 .restaurants li {
   display: flex;
