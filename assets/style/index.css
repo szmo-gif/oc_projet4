@@ -21,12 +21,8 @@ header {
 }
 header img {
   width: 162px;
-  padding: 13px 89px;
-  height: 44px;
+  height: 60px;
   object-fit: contain;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 header h1 {
   text-align: center;
