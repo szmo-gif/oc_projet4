@@ -1,6 +1,12 @@
 $gris-clair: #F6F6F6;
 $gradient-btn: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: black;
