@@ -40,7 +40,6 @@ header .btn {
   align-items: center;
   margin: 0 auto;
   margin-top: 25px;
-  width: 200px;
   height: 50px;
   padding: 0 20px;
   border-radius: 25px;
@@ -58,21 +57,21 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 17px;
   width: 100%;
   height: 50px;
   background-color: #eaeaea;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
-form i {
-  padding-right: 17px;
+@media screen and (min-width: 1440px) {
+  form {
+    box-shadow: none;
+  }
 }
 form input {
   border: none;
   background-color: #eaeaea;
   font-size: 16px;
-  width: 40%;
-  text-align: center;
 }
 form input:focus {
   outline: none;
@@ -84,6 +83,12 @@ form input:focus {
   align-items: center;
   margin-top: 60px;
   background-color: white;
+  padding: 50px 0;
+}
+@media screen and (min-width: 1440px) {
+  .fonctionnement {
+    padding: 50px 180px;
+  }
 }
 .fonctionnement h2 {
   width: 100%;
@@ -96,6 +101,13 @@ form input:focus {
   width: 100%;
   padding: 0 30px;
   counter-reset: list-counter;
+}
+@media screen and (min-width: 1440px) {
+  .fonctionnement ol {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+  }
 }
 .fonctionnement ol li {
   position: relative;
@@ -159,6 +171,15 @@ form input:focus {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .restaurants ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 34px;
+    padding: 0 180px;
+  }
 }
 .restaurants li {
   display: flex;
