@@ -263,37 +263,47 @@ form {
 footer{
     background-color: #353535;
     color: white;
-    padding-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
 
     img {
-        padding: 0 30px;
         width: 137px;
         height: 44px;
         object-fit: contain;
-        margin-top: 20px;
         color: white;
     }
 
     ul{
         width: 100%;
-        padding: 0 30px;
-        margin-top: 20px;
         list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
     }
 
     li{
         width: 100%;
-        margin: 10px 0;
         gap: 5px;
     }
 
     a{
         text-decoration: none;
         color: white;
+        display: flex;
+        gap: 10px;
+    }
+
+    .fa-utensils{
+        font-size: 16px;
+    }
+
+    .fa-hands-helping{
+        font-size: 12px;
     }
 
     i{
-        margin-right: 10px;
         font-size: 20px;
         color: white;
     }
