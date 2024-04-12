@@ -1,18 +1,48 @@
-$gris-clair: #F6F6F6;
+$light-grey: #F6F6F6;
 $gradient-btn: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$new-color: #008766;
+$dark-grey: #353535;
+$white: #ffffff;
+$background-form: #eaeaea;
+$i-color: #7e7e7e;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+$box-shadow-form: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$box-shadow-btn: 0px 4px 15px rgba(0, 0, 0, 0.15);
+$box-shadow-menu: 0px 4px 15px rgba(0, 0, 0, 0.25);
+
+@mixin hearth {
+  font-size: 20px;
+  color: $white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
+  &:hover {
+    background: $gradient-btn;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    text-shadow: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin: 0;
 }
 
-main{
-    background-color: $gris-clair;
+main {
+  background-color: $light-grey;
 }

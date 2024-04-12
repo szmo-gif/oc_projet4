@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  align-items: center;
+  padding: 13px 0 13px 17px;
+
+  i {
+    display: flex;
+    font-size: 20px;
+    color: $dark-grey;
+  }
+
+  img {
+    width: 137px;
+    height: 44px;
+    object-fit: contain;
+    margin: auto;
+  }
+}
+
+main {
+  header {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 250px;
+      margin-bottom: 50px;
+      z-index: 0;
+    }
+
+    h1 {
+      font-family: 'Shrikhand', serif;
+      font-style: italic;
+      font-size: 28px;
+      font-weight: bolder;
+      line-height: 40.82px;
+      border-radius: 40px 40px 0 0;
+      width: 100%;
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: 17rem;
+      background-color: $light-grey;
+      padding: 31px 17px 0 17px;
+    }
+
+    i {
+      position: absolute;
+      z-index: 1;
+      right: 1rem;
+      top: 20rem;
+      @include hearth;
+    }
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 17px;
+}
