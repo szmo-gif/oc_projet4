@@ -65,7 +65,7 @@ form {
   width: 100%;
   height: 50px;
   background-color: #eaeaea;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1440px) {
   form {
@@ -86,7 +86,7 @@ form input:focus {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
-  background-color: white;
+  background-color: #ffffff;
   padding: 50px 0;
 }
 @media screen and (min-width: 1440px) {
@@ -122,13 +122,10 @@ form input:focus {
   height: 70px;
   margin: 10px 0;
   border-radius: 20px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   counter-increment: list-counter;
-}
-.fonctionnement ol li:hover {
-  background-color: #f5edff;
 }
 .fonctionnement ol li:hover i {
   color: #9356DC;
@@ -143,7 +140,7 @@ form input:focus {
   margin-right: 20px;
   border-radius: 50%;
   background-color: #9356DC;
-  color: white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   position: absolute;
@@ -163,7 +160,7 @@ form input:focus {
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   padding-bottom: 40px;
 }
 .restaurants h2 {
@@ -192,7 +189,7 @@ form input:focus {
   width: 90%;
   margin: 10px 0;
   border-radius: 20px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
 }
@@ -253,7 +250,7 @@ form input:focus {
 .restaurants i {
   margin-right: 20px;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
   margin-left: auto;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -274,7 +271,7 @@ form input:focus {
 
 footer {
   background-color: #353535;
-  color: white;
+  color: #ffffff;
   padding: 20px;
   display: flex;
   gap: 16px;
@@ -284,7 +281,7 @@ footer img {
   width: 137px;
   height: 44px;
   object-fit: contain;
-  color: white;
+  color: #ffffff;
 }
 footer ul {
   width: 100%;
@@ -299,7 +296,7 @@ footer li {
 }
 footer a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   display: flex;
   gap: 10px;
 }
@@ -311,7 +308,7 @@ footer .fa-hands-helping {
 }
 footer i {
   font-size: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=index.css.map */
