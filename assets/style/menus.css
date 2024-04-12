@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin: 0;
+}
+
+main {
+  background-color: #F6F6F6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 13px 0 13px 17px;
+}
+header i {
+  display: flex;
+  font-size: 20px;
+  color: #353535;
+}
+header img {
+  width: 137px;
+  height: 44px;
+  object-fit: contain;
+  margin: auto;
+}
+
+main header {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main header img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  margin-bottom: 50px;
+  z-index: 0;
+}
+main header h1 {
+  font-family: "Shrikhand", serif;
+  font-style: italic;
+  font-size: 28px;
+  font-weight: bolder;
+  line-height: 40.82px;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 17rem;
+  background-color: #F6F6F6;
+  padding: 31px 17px 0 17px;
+}
+main header i {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 20rem;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+main header i:hover {
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 17px;
+}
+
+/*# sourceMappingURL=menus.css.map */
