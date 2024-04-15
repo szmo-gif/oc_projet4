@@ -18,7 +18,6 @@ $box-shadow-menu: 0px 4px 15px rgba(0, 0, 0, 0.25);
   color: $white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-
   &:hover {
     background: $gradient-btn;
     background-clip: text;
@@ -28,6 +27,78 @@ $box-shadow-menu: 0px 4px 15px rgba(0, 0, 0, 0.25);
     color: transparent;
     cursor: pointer;
     text-shadow: none;
+  }
+}
+
+@mixin btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 25px;
+  border: none;
+  background: $gradient-btn;
+  box-shadow: $box-shadow-btn;
+  color: $white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+}
+
+@mixin footer {
+  background-color: $dark-grey;
+  color: $white;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  img {
+    width: 137px;
+    height: 44px;
+    object-fit: contain;
+    color: $white;
+  }
+
+  ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  li {
+    width: 100%;
+    gap: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    gap: 10px;
+  }
+
+  .fa-utensils {
+    font-size: 16px;
+  }
+
+  .fa-hands-helping {
+    font-size: 12px;
+  }
+
+  i {
+    font-size: 20px;
+    color: $white;
   }
 }
 

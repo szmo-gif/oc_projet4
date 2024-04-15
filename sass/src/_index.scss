@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 25px;
 
   img {
     width: 162px;
@@ -11,7 +12,6 @@ header {
 
   h1 {
     text-align: center;
-    margin-top: 39px;
   }
 
   p {
@@ -22,27 +22,7 @@ header {
   }
 
   .btn {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 25px;
-    height: 50px;
-    padding: 0 20px;
-    border-radius: 25px;
-    border: none;
-    background: $gradient-btn;
-    box-shadow: $box-shadow-btn;
-    color: $white;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-
-    &:hover {
-      opacity: 0.8;
-      transition: 0.5s;
-    }
+    @include btn
   }
 }
 
@@ -266,50 +246,6 @@ form {
 }
 
 footer {
-  background-color: $dark-grey;
-  color: $white;
-  padding: 20px;
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-
-  img {
-    width: 137px;
-    height: 44px;
-    object-fit: contain;
-    color: $white;
-  }
-
-  ul {
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-  }
-
-  li {
-    width: 100%;
-    gap: 5px;
-  }
-
-  a {
-    text-decoration: none;
-    color: $white;
-    display: flex;
-    gap: 10px;
-  }
-
-  .fa-utensils {
-    font-size: 16px;
-  }
-
-  .fa-hands-helping {
-    font-size: 12px;
-  }
-
-  i {
-    font-size: 20px;
-    color: $white;
-  }
+  @include footer
 }
+
