@@ -18,6 +18,11 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 40px;
+
   header {
     padding: 0;
     display: flex;
@@ -64,8 +69,6 @@ h2 {
   padding-left: 17px;
   position: relative;
   padding-bottom: 12px;
-  margin-top: 3rem;
-
 
   &::after {
     content: "";
@@ -78,7 +81,7 @@ h2 {
   }
 }
 
-main{
+main {
   li {
     display: flex;
     flex-direction: column;
