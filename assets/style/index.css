@@ -18,6 +18,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 25px;
 }
 header img {
   width: 162px;
@@ -26,7 +27,6 @@ header img {
 }
 header h1 {
   text-align: center;
-  margin-top: 39px;
 }
 header p {
   text-align: center;
@@ -39,7 +39,6 @@ header .btn {
   text-align: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 25px;
   height: 50px;
   padding: 0 20px;
   border-radius: 25px;
@@ -248,10 +247,10 @@ form input:focus {
   overflow: hidden;
 }
 .restaurants i {
+  margin-left: auto;
   margin-right: 20px;
   font-size: 20px;
   color: #ffffff;
-  margin-left: auto;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .restaurants i:hover {
