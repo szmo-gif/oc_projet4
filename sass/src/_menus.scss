@@ -138,16 +138,16 @@ main {
       align-self: center;
       transition: right 0.5s ease-in-out;
 
-      &:active + li {
+      &:hover + li {
         transform: translateX(0);
       }
     }
 
-    &:active i {
+    &:hover i {
       right: 0;
     }
 
-    &:active b {
+    &:hover b {
       right: 3.5rem;
     }
 
