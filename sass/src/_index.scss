@@ -152,10 +152,11 @@ form {
     width: 100%;
 
     @media screen and (min-width: 1440px) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 34px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 100px;
+      grid-row-gap: 50px;
       padding: 0 180px;
     }
   }
@@ -170,6 +171,10 @@ form {
     background-color: $white;
     box-shadow: $box-shadow-btn;
     position: relative;
+
+    @media screen and (min-width: 1440px) {
+      width: 100%;
+    }
   }
 
   img {

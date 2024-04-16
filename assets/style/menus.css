@@ -37,6 +37,11 @@ main {
   gap: 40px;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 1440px) {
+  main {
+    margin: 0 192px;
+  }
+}
 main header {
   padding: 0;
   display: flex;
@@ -64,6 +69,12 @@ main header h1 {
   background-color: #F6F6F6;
   padding: 31px 17px 0 17px;
 }
+@media screen and (min-width: 1440px) {
+  main header h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
 main header i {
   position: absolute;
   z-index: 1;
@@ -83,8 +94,14 @@ main header i:hover {
   cursor: pointer;
   text-shadow: none;
 }
-
-h2 {
+@media screen and (min-width: 1440px) {
+  main header i {
+    right: 35rem;
+    top: 19.6rem;
+    font-size: 25px;
+  }
+}
+main h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
@@ -92,7 +109,7 @@ h2 {
   position: relative;
   padding-bottom: 12px;
 }
-h2::after {
+main h2::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -101,7 +118,6 @@ h2::after {
   left: 1rem;
   top: 20px;
 }
-
 main li {
   display: flex;
   flex-direction: column;
@@ -210,6 +226,7 @@ footer a {
   text-decoration: none;
   color: #ffffff;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 footer .fa-utensils {
@@ -221,6 +238,24 @@ footer .fa-hands-helping {
 footer i {
   font-size: 20px;
   color: #ffffff;
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 30px 25px;
+  }
+  footer img {
+    width: 162px;
+    height: 60px;
+    object-fit: contain;
+  }
+  footer ul {
+    width: 55%;
+    flex-direction: row;
+    gap: 7px;
+  }
 }
 
 /*# sourceMappingURL=menus.css.map */

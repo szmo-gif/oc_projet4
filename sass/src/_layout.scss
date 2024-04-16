@@ -85,6 +85,7 @@ $box-shadow-menu: 0px 4px 15px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     color: $white;
     display: flex;
+    align-items: center;
     gap: 10px;
   }
 
@@ -99,6 +100,25 @@ $box-shadow-menu: 0px 4px 15px rgba(0, 0, 0, 0.25);
   i {
     font-size: 20px;
     color: $white;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 30px 25px;
+
+    img {
+      width: 162px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    ul {
+      width: 55%;
+      flex-direction: row;
+      gap: 7px;
+    }
   }
 }
 

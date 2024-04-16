@@ -23,6 +23,10 @@ main {
   gap: 40px;
   padding-bottom: 40px;
 
+  @media screen and (min-width: 1440px) {
+    margin: 0 192px;
+  }
+
   header {
     padding: 0;
     display: flex;
@@ -50,6 +54,11 @@ main {
       top: 17rem;
       background-color: $light-grey;
       padding: 31px 17px 0 17px;
+
+      @media screen and (min-width: 1440px) {
+        display: flex;
+        justify-content: center;
+      }
     }
 
     i {
@@ -58,30 +67,34 @@ main {
       right: 1rem;
       top: 20rem;
       @include hearth;
+
+      @media screen and (min-width: 1440px) {
+        right: 35rem;
+        top: 19.6rem;
+        font-size: 25px;
+      }
     }
   }
-}
 
-h2 {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 18px;
-  padding-left: 17px;
-  position: relative;
-  padding-bottom: 12px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 3px;
-    background-color: $tertiary-color;
-    left: 1rem;
-    top: 20px;
+  h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 17px;
+    position: relative;
+    padding-bottom: 12px;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background-color: $tertiary-color;
+      left: 1rem;
+      top: 20px;
+    }
   }
-}
-
-main {
+  
   li {
     display: flex;
     flex-direction: column;
@@ -116,14 +129,14 @@ main {
   
     i {
       position: absolute;
-      right: -3rem; // Initialement hors de la vue
+      right: -3rem;
       background-color: $tertiary-color;
       color: $white;
       padding: 1rem;
       border-radius: 0 15px 15px 0;
       height: 100%;
       align-self: center;
-      transition: right 0.5s ease-in-out; // Transition vers la droite
+      transition: right 0.5s ease-in-out;
 
       &:active + li {
         transform: translateX(0);
@@ -131,11 +144,11 @@ main {
     }
 
     &:active i {
-      right: 0; // Au survol, déplace l'icône vers la droite
+      right: 0;
     }
 
     &:active b {
-      right: 3.5rem; // Au survol, déplace l'élément <b> vers la droite
+      right: 3.5rem;
     }
 
     b {
@@ -143,7 +156,7 @@ main {
       z-index: 1;
       right: 0.5rem;
       top: 2.5rem;
-      transition: right 0.5s ease-in-out; // Transition vers la droite
+      transition: right 0.5s ease-in-out;
     }
   }
 }

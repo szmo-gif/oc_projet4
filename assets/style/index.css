@@ -174,10 +174,11 @@ form input:focus {
 }
 @media screen and (min-width: 1440px) {
   .restaurants ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 34px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
     padding: 0 180px;
   }
 }
@@ -191,6 +192,11 @@ form input:focus {
   background-color: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
+}
+@media screen and (min-width: 1440px) {
+  .restaurants li {
+    width: 100%;
+  }
 }
 .restaurants img {
   width: 100%;
@@ -297,6 +303,7 @@ footer a {
   text-decoration: none;
   color: #ffffff;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 footer .fa-utensils {
@@ -308,6 +315,24 @@ footer .fa-hands-helping {
 footer i {
   font-size: 20px;
   color: #ffffff;
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 30px 25px;
+  }
+  footer img {
+    width: 162px;
+    height: 60px;
+    object-fit: contain;
+  }
+  footer ul {
+    width: 55%;
+    flex-direction: row;
+    gap: 7px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
