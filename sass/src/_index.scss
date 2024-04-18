@@ -1,3 +1,41 @@
+$animation-duration: 2s; // Durée totale de l'animation en secondes
+$animation-delay: 0.5s; // Délai avant le démarrage de l'animation en secondes
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $light-grey; // Fond de couleur gray
+}
+
+.loader {
+  animation: loaderAnimation $animation-duration ease-in-out;
+}
+
+.content {
+  animation: showContent 4.5s forwards;
+}
+
+@keyframes loaderAnimation {
+  0%, 100% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes showContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 header {
   display: flex;
   flex-direction: column;
