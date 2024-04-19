@@ -18,8 +18,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-color: #F6F6F6;
+  position: fixed;
+  z-index: 1;
 }
 
 .loader {
@@ -27,7 +30,7 @@ main {
 }
 
 .content {
-  animation: showContent 4.5s forwards;
+  animation: showContent 2s forwards;
 }
 
 @keyframes loaderAnimation {
@@ -40,33 +43,43 @@ main {
 }
 @keyframes showContent {
   0% {
+    position: relative;
     opacity: 0;
+    z-index: 0;
   }
   100% {
+    position: relative;
     opacity: 1;
+    z-index: 2;
   }
 }
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
 }
 header img {
   width: 162px;
   height: 60px;
   object-fit: contain;
 }
-header h1 {
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.presentation h1 {
   text-align: center;
 }
-header p {
+.presentation p {
   text-align: center;
   margin-top: 10px;
   font-size: 18px;
   color: #353535;
 }
-header .btn {
+.presentation .btn {
   display: flex;
   text-align: center;
   align-items: center;
