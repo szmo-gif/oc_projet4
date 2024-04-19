@@ -1,3 +1,38 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Décalage initial */
+    z-index: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 2;
+  }
+}
+
+/* Animation pour chaque section avec un délai décalé */
+.entrees, .plats, .desserts {
+  animation: fade-in 0.5s forwards;
+  z-index : -1;
+}
+
+.entrées {
+  animation-delay: 0.2s; /* Délai pour la section d'entrées */
+}
+
+.plats {
+  animation-delay: 0.5s; /* Délai pour la section de plats */
+}
+
+.desserts {
+  animation-delay: 1s; /* Délai pour la section de desserts */
+}
+
+body {
+  z-index: 1;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -105,6 +140,10 @@ header {
     margin: 17px 17px 0 17px;
     overflow: hidden;
     position: relative;
+
+    .ellipsis {
+      @include ellipsis;
+    }
   
     img {
       width: 100%;
@@ -158,6 +197,7 @@ header {
       right: 0.5rem;
       top: 2.5rem;
       transition: right 0.5s ease-in-out;
+      background-color: $white;
     }
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,40 @@ body {
 
 main {
   background-color: #F6F6F6;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Décalage initial */
+    z-index: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 2;
+  }
+}
+/* Animation pour chaque section avec un délai décalé */
+.entrees, .plats, .desserts {
+  animation: fade-in 0.5s forwards;
+  z-index: -1;
+}
+
+.entrées {
+  animation-delay: 0.2s; /* Délai pour la section d'entrées */
+}
+
+.plats {
+  animation-delay: 0.5s; /* Délai pour la section de plats */
+}
+
+.desserts {
+  animation-delay: 1s; /* Délai pour la section de desserts */
+}
+
+body {
+  z-index: 1;
 }
 
 header {
@@ -85,7 +120,7 @@ header img {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 [id=menu] header i:hover, [id=menu] header i:focus {
-  background-color: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -129,6 +164,11 @@ header img {
   margin: 17px 17px 0 17px;
   overflow: hidden;
   position: relative;
+}
+[id=menu] li .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 [id=menu] li img {
   width: 100%;
@@ -175,6 +215,7 @@ header img {
   right: 0.5rem;
   top: 2.5rem;
   transition: right 0.5s ease-in-out;
+  background-color: #ffffff;
 }
 
 button {
