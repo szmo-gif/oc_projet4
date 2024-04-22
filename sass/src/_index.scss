@@ -91,7 +91,7 @@ header {
     background-color: $background-form;
     box-shadow: $box-shadow-form;
   
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 768px) {
       box-shadow: none;
     }
   
@@ -106,10 +106,6 @@ header {
     }
   }
 }
-
-
-
-
 
 .fonctionnement {
   display: flex;
@@ -136,7 +132,7 @@ header {
     padding: 0 30px;
     counter-reset: list-counter;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 870px) {
       display: flex;
       flex-direction: row;
       gap: 34px;
@@ -203,6 +199,10 @@ header {
   h2 {
     width: 100%;
     padding-left: 20px;
+
+    @media screen and (min-width: 870px) {
+      padding-left: 180px;
+    }
   }
 
   ul {
@@ -211,7 +211,7 @@ header {
     align-items: center;
     width: 100%;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 870px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);

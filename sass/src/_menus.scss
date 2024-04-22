@@ -1,9 +1,11 @@
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: translateY(20px); /* Décalage initial */
+    transform: translateY(20px);
+    /* Décalage initial */
     z-index: 0;
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -12,21 +14,26 @@
 }
 
 /* Animation pour chaque section avec un délai décalé */
-.entrees, .plats, .desserts {
+.entrees,
+.plats,
+.desserts {
   animation: fade-in 0.5s forwards;
-  z-index : -1;
+  z-index: -1;
 }
 
 .entrées {
-  animation-delay: 0.2s; /* Délai pour la section d'entrées */
+  animation-delay: 0.2s;
+  /* Délai pour la section d'entrées */
 }
 
 .plats {
-  animation-delay: 0.5s; /* Délai pour la section de plats */
+  animation-delay: 0.5s;
+  /* Délai pour la section de plats */
 }
 
 .desserts {
-  animation-delay: 1s; /* Délai pour la section de desserts */
+  animation-delay: 1s;
+  /* Délai pour la section de desserts */
 }
 
 body {
@@ -52,27 +59,28 @@ header {
   }
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  z-index: 0;
+}
+
+
 [id="menu"] {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 40px;
+  max-width: 1000px;
+  margin: auto;
 
-  @media screen and (min-width: 1440px) {
-    margin: 0 192px;
-  }
 
   header {
     padding: 0;
     display: flex;
     flex-direction: column;
 
-    img {
-      width: 100%;
-      object-fit: cover;
-      height: 250px;
-      z-index: 0;
-    }
 
     h1 {
       font-family: 'Shrikhand', serif;
@@ -85,29 +93,23 @@ header {
       z-index: 1;
       position: absolute;
       display: flex;
+      justify-content: flex-start;
       align-items: center;
       top: 17rem;
       background-color: $light-grey;
       padding: 31px 17px 0 17px;
+      max-width: 1000px;
+      gap: 24px;
 
-      @media screen and (min-width: 1440px) {
+      @media screen and (min-width: 870px) {
         display: flex;
         justify-content: center;
       }
     }
 
     i {
-      position: absolute;
       z-index: 1;
-      right: 1rem;
-      top: 20rem;
       @include hearth;
-
-      @media screen and (min-width: 1440px) {
-        right: 35rem;
-        top: 19.6rem;
-        font-size: 25px;
-      }
     }
   }
 
@@ -118,7 +120,7 @@ header {
     padding-left: 17px;
     position: relative;
     padding-bottom: 12px;
-  
+
     &::after {
       content: "";
       position: absolute;
@@ -129,7 +131,7 @@ header {
       top: 20px;
     }
   }
-  
+
   li {
     display: flex;
     flex-direction: column;
@@ -148,34 +150,36 @@ header {
     &:not(:hover) {
       animation: shrink-padding 0.8s forwards; // Appliquer l'animation au survol
     }
-  
 
-// Définir l'animation pour le changement de padding-right
-@keyframes expand-padding {
-  0% {
-    padding-right: 30px; // Valeur initiale
-  }
-  100% {
-    padding-right: 100px; // Valeur finale au survol
-  }
-}
 
-@keyframes shrink-padding {
-  0% {
-    padding-right: 100px; // Valeur initiale
-  }
-  100% {
-    padding-right: 30px; // Valeur finale au survol
-  }
-}
+    // Définir l'animation pour le changement de padding-right
+    @keyframes expand-padding {
+      0% {
+        padding-right: 30px; // Valeur initiale
+      }
 
-// Appliquer l'animation au survol de la div
-.ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: relative;
-}
+      100% {
+        padding-right: 100px; // Valeur finale au survol
+      }
+    }
+
+    @keyframes shrink-padding {
+      0% {
+        padding-right: 100px; // Valeur initiale
+      }
+
+      100% {
+        padding-right: 30px; // Valeur finale au survol
+      }
+    }
+
+    // Appliquer l'animation au survol de la div
+    .ellipsis {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+    }
 
     img {
       width: 100%;
@@ -183,7 +187,7 @@ header {
       height: 200px;
       z-index: 0;
     }
-  
+
     h3 {
       font-size: 18px;
       font-weight: 700;
@@ -191,7 +195,7 @@ header {
       margin-top: 17px;
       margin-right: 0;
     }
-  
+
     p {
       font-size: 14px;
       font-weight: 300;
@@ -199,7 +203,7 @@ header {
       margin-bottom: 17px;
       margin-right: 0;
     }
-  
+
     i {
       display: flex;
       align-items: center;
@@ -212,7 +216,7 @@ header {
       height: 100%;
       transition: right 0.5s ease-in-out;
 
-      &:hover + li {
+      &:hover+li {
         transform: translateX(0);
       }
     }

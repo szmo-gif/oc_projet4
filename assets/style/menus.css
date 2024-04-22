@@ -18,7 +18,8 @@ main {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: translateY(20px); /* Décalage initial */
+    transform: translateY(20px);
+    /* Décalage initial */
     z-index: 0;
   }
   100% {
@@ -28,21 +29,26 @@ main {
   }
 }
 /* Animation pour chaque section avec un délai décalé */
-.entrees, .plats, .desserts {
+.entrees,
+.plats,
+.desserts {
   animation: fade-in 0.5s forwards;
   z-index: -1;
 }
 
 .entrées {
-  animation-delay: 0.2s; /* Délai pour la section d'entrées */
+  animation-delay: 0.2s;
+  /* Délai pour la section d'entrées */
 }
 
 .plats {
-  animation-delay: 0.5s; /* Délai pour la section de plats */
+  animation-delay: 0.5s;
+  /* Délai pour la section de plats */
 }
 
 .desserts {
-  animation-delay: 1s; /* Délai pour la section de desserts */
+  animation-delay: 1s;
+  /* Délai pour la section de desserts */
 }
 
 body {
@@ -66,27 +72,25 @@ header img {
   margin: auto;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  z-index: 0;
+}
+
 [id=menu] {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 40px;
-}
-@media screen and (min-width: 1440px) {
-  [id=menu] {
-    margin: 0 192px;
-  }
+  max-width: 1000px;
+  margin: auto;
 }
 [id=menu] header {
   padding: 0;
   display: flex;
   flex-direction: column;
-}
-[id=menu] header img {
-  width: 100%;
-  object-fit: cover;
-  height: 250px;
-  z-index: 0;
 }
 [id=menu] header h1 {
   font-family: "Shrikhand", serif;
@@ -99,22 +103,22 @@ header img {
   z-index: 1;
   position: absolute;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   top: 17rem;
   background-color: #F6F6F6;
   padding: 31px 17px 0 17px;
+  max-width: 1000px;
+  gap: 24px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 870px) {
   [id=menu] header h1 {
     display: flex;
     justify-content: center;
   }
 }
 [id=menu] header i {
-  position: absolute;
   z-index: 1;
-  right: 1rem;
-  top: 20rem;
   font-size: 20px;
   color: #ffffff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -129,13 +133,6 @@ header img {
   cursor: pointer;
   text-shadow: none;
   transition: 0.5s background-color;
-}
-@media screen and (min-width: 1440px) {
-  [id=menu] header i {
-    right: 35rem;
-    top: 19.6rem;
-    font-size: 25px;
-  }
 }
 [id=menu] h2 {
   text-transform: uppercase;
@@ -308,7 +305,7 @@ footer i {
   font-size: 20px;
   color: #ffffff;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 870px) {
   footer {
     display: flex;
     flex-direction: row-reverse;
