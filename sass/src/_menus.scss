@@ -110,6 +110,7 @@ img {
     i {
       z-index: 1;
       @include hearth;
+      color: $light-grey;
     }
   }
 
