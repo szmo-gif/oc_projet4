@@ -214,7 +214,7 @@ header img {
 }
 @media screen and (min-width: 870px) {
   .restaurants h2 {
-    padding-left: 180px;
+    padding-left: 50px;
   }
 }
 .restaurants ul {
@@ -230,7 +230,7 @@ header img {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 100px;
     grid-row-gap: 50px;
-    padding: 0 180px;
+    padding: 0 50px;
   }
 }
 .restaurants li {
