@@ -302,7 +302,8 @@ header {
   i {
     margin-left: auto;
     margin-right: 20px;
-    @include hearth
+    @include hearth;
+    @include return-animation
   }
 
   a {
