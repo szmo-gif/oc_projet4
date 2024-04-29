@@ -233,7 +233,7 @@ header {
     box-shadow: $box-shadow-btn;
     position: relative;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 780px) {
       width: 100%;
     }
   }

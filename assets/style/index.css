@@ -244,7 +244,7 @@ header img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 780px) {
   .restaurants li {
     width: 100%;
   }
