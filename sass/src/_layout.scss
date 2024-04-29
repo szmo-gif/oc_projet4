@@ -80,7 +80,6 @@ $box-shadow-menu: 0 4px 15px rgba(0, 0, 0, 0.25);
   }
 
   ul {
-    width: 100%;
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -88,7 +87,6 @@ $box-shadow-menu: 0 4px 15px rgba(0, 0, 0, 0.25);
   }
 
   li {
-    width: 100%;
     gap: 5px;
   }
 
@@ -126,7 +124,6 @@ $box-shadow-menu: 0 4px 15px rgba(0, 0, 0, 0.25);
     }
 
     ul {
-      width: 55%;
       flex-direction: row;
       gap: 7px;
     }
