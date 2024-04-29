@@ -309,6 +309,7 @@ header img {
   font-size: 20px;
   color: #ffffff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transition: 0.5s;
 }
 .restaurants i:hover, .restaurants i:focus {
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
@@ -319,7 +320,10 @@ header img {
   color: transparent;
   cursor: pointer;
   text-shadow: none;
-  transition: 0.5s background-color;
+}
+.restaurants i:not(:hover):not(:focus) {
+  background: transparent;
+  transition: 0.5s;
 }
 .restaurants a {
   text-decoration: none;
