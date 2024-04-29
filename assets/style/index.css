@@ -345,14 +345,12 @@ footer img {
   color: #ffffff;
 }
 footer ul {
-  width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
 footer li {
-  width: 100%;
   gap: 5px;
 }
 footer a {
@@ -385,7 +383,6 @@ footer i {
     object-fit: contain;
   }
   footer ul {
-    width: 55%;
     flex-direction: row;
     gap: 7px;
   }
